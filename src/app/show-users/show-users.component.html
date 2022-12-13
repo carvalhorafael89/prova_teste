@@ -1,0 +1,20 @@
+<h2><p>User List</p></h2>
+
+<div class="div_lateral">
+<table>
+    <tr>
+        <td class="cabeçalho"><strong>Id</strong></td>
+        <td class="cabeçalho"><strong>Nome</strong></td>
+        <td class="cabeçalho"><strong>Username</strong></td>
+        <td class="cabeçalho"><strong>Email</strong></td>
+    </tr>
+
+    <tr class="botao" *ngFor="let user of userlist">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+    </tr>
+</table>
+</div>
+<div>Total de usuários cadastrados: {{totalusers()}} </div>
